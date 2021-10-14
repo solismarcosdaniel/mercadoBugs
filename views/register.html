@@ -24,7 +24,7 @@ rel="stylesheet" />
                 <!-- VER LA LUPA QUE NO ENTRA EN EL CUADRO DE BUSQUEDA, AHHHHHHHHHH-->
                           <nav class="busqueda">
                                <form>
-                                   <input name="Cuadro de busqueda"><i class="fas fa-search" id="lupa"></i>
+                                   <input name="Cuadro de busqueda" placeholder="Buscar productos,marcas y mas"><i class="fas fa-search" id="lupa"></i>
                                     <button type="submit"></button>
                                </form>     
                           </nav>
@@ -68,24 +68,24 @@ rel="stylesheet" />
     </header>
 <main>
     <form action="/register.html" method="POST">
-        <label for="firstName">Nombre y apellido:
-            <input type="text"name="firstName" minlength="3"><br><br>
+        <label for="firstName">
+            <input type="text"name="firstName" class="input-reg" placeholder="Nombre y apellido" minlength="3"><br><br>
         </label>
 
-        <label for="">Nombre de usuario:</label>
-        <input type="username"name="" minlength="3"><br><br>
+        <label for=""></label>
+        <input type="username"name="" class="input-reg" placeholder="Nombre de usuario" minlength="3"><br><br>
 
-        <label for="">Fecha de nacimiento:</label>
-        <input type="date"name=""><br><br>
+        <label for="">Fecha de nacimiento</label><br>
+        <input type="date"name="" class="input-reg"><br><br>
 
-        <label for="">Domicilio:</label>
-        <input type="text"name="" minlength="3"><br><br>
+        <label for=""></label>
+        <input type="text"name="" class="input-reg" placeholder="Domicilio" minlength="3"><br><br>
 
-        <label for="">Perfil de usuario:</label>
+        <label for="">Perfil de usuario</label><br><br>
         <input type="radio"name=""> Comprador
         <input type="radio"name=""> Vendedor <br><br>
 
-        <label for="">Categorias de interes:<br><br>
+        <label for="">Categorias de interes<br><br>
             <input type="checkbox" value="" name="">Electro<br>
             <input type="checkbox" value="" name="">Moda<br>
             <input type="checkbox" value="" name="">Hogar<br>
@@ -94,14 +94,14 @@ rel="stylesheet" />
         </label>
         <br><br>
 
-        <label for="">Foto de usuario:</label>
+        <label for="">Foto de usuario</label>
         <input type="file"name="avatar"><br><br>
 
-        <label for="">Contraseña:</label>
-        <input type="password"name=""><br><br>
+        <label for=""></label>
+        <input type="password"name="" class="input-reg" placeholder="Contraseña"><br><br>
 
-        <label for="">Confirmar contraseña:</label>
-        <input type="password"name=""><br><br>
+        <label for=""></label>
+        <input type="password"name="" class="input-reg" placeholder="Confirmar contraseña"><br><br>
 
         <button type="submit">Enviar</button>
 
@@ -120,17 +120,26 @@ rel="stylesheet" />
 <footer>
     <section>
         <ul>
-            <i class="fas fa-credit-card"></i>
-            <li>Paga con tarjeta o en efectivo</li>
-            <p>Con Mercado Liebre Cash, tenes cuotas sin interes con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            <div class="footer-flex">
+                <div class="card-flex">
+                    <i class="fas fa-credit-card"></i>
+                    <li>Paga con tarjeta o en efectivo</li>
+                    <p>Con Mercado Liebre Cash, tenes cuotas sin interes con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                </div>
 
-            <i class="fas fa-gift"></i>
-            <li>Envio gratis desde $2.500</li>
-            <p>Solo por estar registrado en Mercado Liebre tenes envios gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+                <div class="gift-flex">
+                    <i class="fas fa-gift"></i>
+                    <li>Envio gratis desde $2.500</li>
+                    <p>Solo por estar registrado en Mercado Liebre tenes envios gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+                </div>
+                
+                <div class="shield-flex">
+                    <i class="fas fa-user-shield"></i>
+                    <li>Seguridad, de principio a fin</li>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estas siempre protegid@.</p>
+                </div>
 
-            <i class="fas fa-user-shield"></i>
-            <li>Seguridad, de principio a fin</li>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estas siempre protegid@.</p>
+            </div>
 
             <li>Copyright © 1999-2020 MercadoLiebre S.R.L.</li>
         </ul>

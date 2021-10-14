@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+a{
+    color: #000;
+}
+
 header {
     background-color: #eac926;
 }
@@ -64,8 +68,26 @@ p.descuento {
     font-size: 16px;
 }
 p.descripcion {
+    /* color: red; */
     font-size: 16px;
     /* display: none; */
+    /* visibility: ; */
+}
+
+.card-productos p.descripcion{
+    transition: 0ms;
+    /* transform: none; */
+    /* visibility: none; */
+    display: none;
+    /* display: none; */
+}
+
+.card-productos:hover .descripcion{
+    display: inline-block;
+    /* visibility: visible; */
+    transform: initial;
+    /* color: red; */
+    /* background-color: red; */
 }
 
 .ultima-visita .descripcion{
@@ -379,4 +401,43 @@ nav.busqueda{
 
 ul li{
     margin-right: 10px;
+}
+
+#enviar:hover{
+    background-color: #0022AA;
+    /* transition: all; */
+}
+
+.login{
+    width: 50%;
+    padding: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ;
+}
+
+.boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.boton-login{
+    width: 50%;
+}
+.nombre-usuario{
+    justify-content: center;
+    align-items: center;
+    /* color: red; */
+}
+.pass{
+    justify-content: center;
+}
+.input-log{
+    width: 100%;
+}
+
+.input-reg{
+    width: 30%;
 }
